@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale='1.0'>
+    <title>3L</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+              
+    
+    
+    </script>
+    
+  </head>
+  <body>
+
+    <!-- header -->
+    
+    
+
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <div class="img">
+            <img src="images/logo.png" alt="">
+          </div>
+        </div>
+        <nav>
+          <ul class="nav">
+            <li onclick="showHome()">Home</li>
+            <li onclick="showGetEnvolve()">Get Envolve</li>
+            <li onclick="showThreel()">3L</li>
+            <li onclick="showTickets()">Tickets</li>
+            <li onclick="showContact()">Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main home -->
+
+    <main id="home">
+
+    <!-- banner -->
+
+    <section class="banner">
+      <video autoplay muted loop id="myVideo">
+        <source src="video.webm" type="video/webm">
+      </video>
+      <div class="container">
+        <div class="banner-images">
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about-us-1 -->
+
+    <section class="about-us-1">
+      <div class="container">
+          <div class="phone">
+              <div class="phoneimg">
+                <img src="images/photo.png" alt="3L">
+              </div>
+              <div class="phonedescription">
+                <h2>Life Way hits in 2018</h2>
+                <p>Science and Fun, two flavors in our life. Each of them has a different character which specializes it, but they meet at end. They mix making a sense of our life. To conclude, we can say that when you LEARN while having fun and LAUGHing from the bottom of your deep heart during your life, you can LIVE a sustainable life and achieve your goals greatly. The power of those triple L (Learn, Laugh and Live) makes a sense of our life and gives it a meaning and that’s what we seek to achieve through our event.</p>
+                <p>Imagine that you’re in an event where science and fun are under one ceiling in a way  that has never been before. In our event you can enjoy both beneficial scientific information and entertainment on one single day. In our event , boredom has no place where you can enjoy time having a scientific talk in an unusual way together with motivational talks given by professionals and having fun with great musical bands.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- testemonials-1 -->
+
+    
+
+    <!-- map -->
+
+    <section class="map">
+        <div id="map" style="width:100%;height:400px;">
+          
+        </div>
+        
+      <div class="container">
+        
+      </div>
+    </section>
+
+  </main>
+
+  <!-- main get envolve -->
+
+  <main id="getenvolve">
+      
+      <div class="container">
+        <div>
+            Call For
+        </div> <br>
+        <span  onclick="showStoresForm()">
+            Stores
+        </span>
+        <span  onclick="showVolunteersForm()">
+            Volunteer Photoghraghers
+        </span>
+      </div>
+
+      <form id="storesform" method="post" target="_blank" action="https://script.google.com/macros/s/AKfycbx6l3cj1XMKmLN_cNrRK5anBTd4s18zpVgpay7sEyFckerrZ4aE/exec">
+          <i class="fas fa-times" onclick="hideStoresForm()"></i>        
+          <p>Name</p>         <input type="text" name="Name"><br>
+          <p>E-mail</p>       <input type="email" name="E-Mail"><br>
+          <p>Phone Number</p> <input type="number" name="Phone Number"><br><br><br>
+
+          <p>Have you ever attended Maker Faire Cairo Before?</p> <br> 
+          <input type="radio" name="Attended Before" value="yes"> <p class="light">yes</p> <br>
+          <input type="radio" name="Attended Before" value="no"> <p class="light">No</p> <br><br><br>
+
+          <p>Store Name</p>      <input type="text" name="Store Name"><br>
+          <p>Facebook Page</p>      <input type="text" name="Facebook Page"><br><br><br>
+          
+          <p>What are you selling?</p> <br>
+          <input type="checkbox" name="sells" value="animeproducts"> <p class="light">Anime Products</p> <br>
+          <input type="checkbox" name="sells" value="electronics"> <p class="light">Electronics</p> <br>
+          <input type="checkbox" name="sells" value="tools"> <p class="light">Tools</p> <br>
+          <input type="checkbox" name="sells" value="moviesproducts"> <p class="light">Movies Products</p> <br>
+          <input type="checkbox" name="sells" value="gamesproducts"> <p class="light">Games Products</p> <br>
+          <input type="checkbox" name="sells" value="others"> <p class="light">Others</p> <input type="text" name="Other Sells"> <br><br><br>
+
+          <p>Specify the space you need</p> <br>
+          <input type="radio" name="Budget" value="1000"> <p class="light">Shared tent + 1 table + 1 chair" 1000EGP</p> <br>          
+          <input type="radio" name="Budget" value="1800"> <p class="light">Dedicated tent + 2 tables + 2 chairs" 1800EGP</p> <br><br><br>
+
+          
+          <input type="submit" class="submit" onclick="changeButton()">    
+      </form>
+      
+      <form id="volunteersform" method="post" target="_blank" action="https://script.google.com/macros/s/AKfycbx6l3cj1XMKmLN_cNrRK5anBTd4s18zpVgpay7sEyFckerrZ4aE/exec">
+          <i class="fas fa-times" onclick="hideVolunteersForm()"></i>        
+          <p>Name</p>         <input type="text" name="Name"><br>
+          <p>E-mail</p>       <input type="email" name="E-Mail"><br>
+          <p>Phone Number</p> <input type="number" name="Phone Number"><br><br><br>
+
+          <p>Have you covered events before?</p> <br> 
+          <input type="radio" name="Coverd Events Before" value="yes"> <p class="light">yes</p> <br>
+          <input type="radio" name="Coverd Events Before" value="no"> <p class="light">No</p> <br><br><br>
+
+          <p>Show us your work! </p> <p class="light">Please add a link to your page/ portfolio.</p>
+          <input type="text" name="Work Link"><br><br><br>
+
+          <p>What is your photography kit?</p> <p class="light">Please list your photography kit/ equipment that you’ll use in the event.</p>     
+          <textarea form="volunteersform" name="Photoghraphy kit" id="" cols="30" rows="5"></textarea><br><br><br>
+          
+          <input type="submit" class="submit" onclick="changeButton()">    
+      </form>
+
+
+    </main>
+
+<!-- main 3l -->
+
+<main id="threel">
+  <div class="container">
+
+  </div>
+</main>
+
+<!-- main tickets -->
+
+<main id="tickets">
+
+    <div class="container">
+      <div onclick="showTicketsFormPersonRegular()">
+        <h1>Regular Ticket</h1>
+        <h2>50 L.E</h2>
+        <hr>
+        <p>Admit One</p>
+        <p>Speeches</p>
+        <p>Activities</p>
+        <p>Sub-Events</p>
+        <p>Compititions</p>
+      </div>
+      <div onclick="showTicketsFormPersonBus()">
+        <h1>Bus Ticket</h1>
+        <h2>70 L.E</h2>
+        <hr>
+        <p>Admit One</p>
+        <p>Speeches</p>
+        <p>Activities</p>
+        <p>Sub-Events</p>
+        <p>Compititions</p>
+        <p>Buses</p>
+      </div>
+        <div onclick="showTicketsFormGroupRegular()">
+          <h1>Regular Ticket Group</h1>
+          <h2>160 L.E</h2>
+          <hr>
+          <p>Admit four</p>
+          <p>Speeches</p>
+          <p>Activities</p>
+          <p>Sub-Events</p>
+          <p>Compititions</p>
+        </div>
+        <div onclick="showTicketsFormPersonLate()">
+          <h1>Late Owl</h1>
+          <h2>100 L.E</h2>
+          <hr>
+          <p>Admit One</p>
+          <p>Speeches</p>
+          <p>Activities</p>
+          <p>Sub-Events</p>
+          <p>Compititions</p>
+        </div>
+        <div onclick="showTicketsFormGroupLate()">
+          <h1>Lte Owl Group</h1>
+          <h2>320 L.E</h2>
+          <hr>
+          <p>Admit four</p>
+          <p>Speeches</p>
+          <p>Activities</p>
+          <p>Sub-Events</p>
+          <p>Compititions</p>
+        </div>
+    </div>
+
+    <form id="ticketsformpersonregular" method="post" target="_blank" action="https://script.google.com/macros/s/AKfycbx6l3cj1XMKmLN_cNrRK5anBTd4s18zpVgpay7sEyFckerrZ4aE/exec">
+        <i class="fas fa-times" onclick="hideTicketsForm()"></i>        
+        <img src="images/photo.png" alt="">
+        
+        <p>Ticket Type</p>         <input value="Regular Ticket" name="Ticket Type" disabled><br><br><br><br>
+        <p>Name</p>         <input type="text" name="Name"><br><br>
+        <p>E-mail</p>       <input type="email" name="E-Mail"><br><br>
+        <p>Phone Number</p> <input type="number" name="Phone Number"><br><br>
+        <p>Government</p>   <input type="text" name="Government"><br><br><br><br>
+        <p>Comment</p>         <textarea form="ticketsformperson" name="Comment" id="" cols="30" rows="5"></textarea><br><br>
+                               <input type="submit" class="submit" value="Submit" onclick="changeButton()">  
+    </form>
+
+    <form id="ticketsformpersonbus" method="post" target="_blank" action="https://script.google.com/macros/s/AKfycbx6l3cj1XMKmLN_cNrRK5anBTd4s18zpVgpay7sEyFckerrZ4aE/exec">
+      <i class="fas fa-times" onclick="hideTicketsForm()"></i>        
+      <img src="images/photo.png" alt="">
+
+      <p>Ticket Type</p>         <input value="Bus Ticket" name="Ticket Type" disabled><br><br><br><br>
+      <p>Name</p>         <input type="text" name="Name"><br><br>
+      <p>E-mail</p>       <input type="email" name="E-Mail"><br><br>
+      <p>Phone Number</p> <input type="number" name="Phone Number"><br><br>
+      <p>Government</p>   <input type="text" name="Government"><br><br><br><br>
+      <p>Comment</p>         <textarea form="ticketsformperson" name="Comment" id="" cols="30" rows="5"></textarea><br><br>
+                             <input type="submit" class="submit" value="Submit" onclick="changeButton()">  
+  </form>
+
+  <form id="ticketsformpersonlate" method="post" target="_blank" action="https://script.google.com/macros/s/AKfycbx6l3cj1XMKmLN_cNrRK5anBTd4s18zpVgpay7sEyFckerrZ4aE/exec">
+    <i class="fas fa-times" onclick="hideTicketsForm()"></i>        
+    <img src="images/photo.png" alt="">
+
+    <p>Ticket Type</p>         <input value="Late Owl" name="Ticket Type" disabled><br><br><br><br>
+    <p>Name</p>         <input type="text" name="Name"><br><br>
+    <p>E-mail</p>       <input type="email" name="E-Mail"><br><br>
+    <p>Phone Number</p> <input type="number" name="Phone Number"><br><br>
+    <p>Government</p>   <input type="text" name="Government"><br><br><br><br>
+    <p>Comment</p>         <textarea form="ticketsformperson" name="Comment" id="" cols="30" rows="5"></textarea><br><br>
+                           <input type="submit" class="submit" value="Submit" onclick="changeButton()">  
+  </form>
+
+
+    <form id="ticketsformgroupregular" method="post" target="_blank" action="https://script.google.com/macros/s/AKfycbx6l3cj1XMKmLN_cNrRK5anBTd4s18zpVgpay7sEyFckerrZ4aE/exec">
+          <i class="fas fa-times" onclick="hideTicketsForm()"></i>        
+          <img src="images/photo.png" alt="">
+
+          <p>Ticket Type</p>         <input value="Regular Ticket Group" name="Ticket Type" disabled><br><br><br><br>
+          <p>Name1</p>        <input type="text" name="Name-1"><br><br>
+          <p>E-mail</p>       <input type="email" name="E-mail-1"><br><br>
+          <p>Phone Number</p> <input type="number" name="Phone Number-1"><br><br>
+          <p>Government</p>   <input type="text" name="Government-1"><br><br><br><br>
+  
+          <p>Name2</p>         <input type="text" name="Name-2"><br><br>
+          <p>E-mail</p>       <input type="email" name="E-mail-2"><br><br>
+          <p>Phone Number</p> <input type="number" name="Phone Number-2"><br><br>
+          <p>Government</p>   <input type="text" name="Government-2"><br><br><br><br>
+  
+          <p>Name3</p>         <input type="text" name="Name-3"><br><br>
+          <p>E-mail</p>       <input type="email" name="E-mail-3"><br><br>
+          <p>Phone Number</p> <input type="number" name="Phone Number-3"><br><br>
+          <p>Government</p>   <input type="text" name="Government-3"><br><br><br><br>
+  
+          <p>Name4</p>         <input type="text" name="Name-4"><br><br>
+          <p>E-mail</p>       <input type="email" name="E-mail-4"><br><br>
+          <p>Phone Number</p> <input type="number" name="Phone Number-4"><br><br>
+          <p>Government</p>   <input type="text" name="Government-4"><br><br><br><br>
+  
+          <p>Comment</p>         <textarea form="ticketsformgroup" name="Comment" id="" cols="30" rows="5"></textarea><br><br>
+          
+                                 <input type="submit" class="submit" onclick="changeButton()">    
+    </form>
+
+    <form id="ticketsformgrouplate" method="post" target="_blank" action="https://script.google.com/macros/s/AKfycbx6l3cj1XMKmLN_cNrRK5anBTd4s18zpVgpay7sEyFckerrZ4aE/exec">
+      <i class="fas fa-times" onclick="hideTicketsForm()"></i>        
+      <img src="images/photo.png" alt="">
+
+      <p>Ticket Type</p>         <input value="Late Owl Group" name="Ticket Type" disabled><br><br><br><br>
+      <p>Name1</p>        <input type="text" name="Name-1"><br><br>
+      <p>E-mail</p>       <input type="email" name="E-mail-1"><br><br>
+      <p>Phone Number</p> <input type="number" name="Phone Number-1"><br><br>
+      <p>Government</p>   <input type="text" name="Government-1"><br><br><br><br>
+
+      <p>Name2</p>         <input type="text" name="Name-2"><br><br>
+      <p>E-mail</p>       <input type="email" name="E-mail-2"><br><br>
+      <p>Phone Number</p> <input type="number" name="Phone Number-2"><br><br>
+      <p>Government</p>   <input type="text" name="Government-2"><br><br><br><br>
+
+      <p>Name3</p>         <input type="text" name="Name-3"><br><br>
+      <p>E-mail</p>       <input type="email" name="E-mail-3"><br><br>
+      <p>Phone Number</p> <input type="number" name="Phone Number-3"><br><br>
+      <p>Government</p>   <input type="text" name="Government-3"><br><br><br><br>
+
+      <p>Name4</p>         <input type="text" name="Name-4"><br><br>
+      <p>E-mail</p>       <input type="email" name="E-mail-4"><br><br>
+      <p>Phone Number</p> <input type="number" name="Phone Number-4"><br><br>
+      <p>Government</p>   <input type="text" name="Government-4"><br><br><br><br>
+
+      <p>Comment</p>         <textarea form="ticketsformgroup" name="Comment" id="" cols="30" rows="5"></textarea><br><br>
+      
+                             <input type="submit" class="submit" onclick="changeButton()">    
+    </form>
+    
+  </main>
+
+  
+  <!-- main contact -->
+
+  <main id="contact">
+
+    <div class="container">
+      <div>
+          <i class="fas fa-envelope"></i>
+      </div><br>
+      <div>
+          activities.3l2018@gmail.com
+      </div>
+      <div>
+          info.3l018@gmail.com
+      </div>
+      <div>
+          lifeway132017@gmail.com
+      </div>
+    </div>
+
+  </main>
+  
+
+    <!-- testemonials-2 -->
+
+    <section class="testemonials-2">
+      <div class="container">
+          <div class="social">
+            <div class="socialfacebook">
+              
+              <a href="https://www.facebook.com/LifeWay2017/" target="_blank"><img src="images/1.png" alt="Facebook"></a>
+            </div>
+            <div class="socialyoutube">
+              <a href="https://www.youtube.com/channel/UC_I8TFTRf5KGgvabTh9B3mg" target="_blank"><img src="images/2.png" alt="Youtube"></a>
+            </div>
+            
+          </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    
+
+
+    <!-- footer -->
+
+    <footer>
+      <div class="container">
+        <div class="first">
+          <p>Copyrights &copy; 2018 - 3L</p>
+        </div>
+        <div class="second">
+          <p>Designed By <a href="https://www.facebook.com/Kimo20012001/" target="_blank">Karim Mohamed</a> &amp; Coded By <a href="https://www.facebook.com/ali.saber.27.2/" target="_blank">Ali Kehel</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+      // Initialize and add the map
+          function initMap() {
+      // The location of Uluru
+      var andalus = {lat: 30.0614704, lng: 31.3006089};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 15, center: andalus});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: andalus, map: map});
+      }
+    </script>
+            
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo2bxxFBFUBgP2m3Dy-gpzhmPJE8eOlMA&callback=initMap">
+    </script>    
+
+    <script src="script.js">
+    
+    </script>
+
+    <script data-cfasync="false" type="text/javascript" src="ticketsformperson-submission-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="ticketsformgroup-submission-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="storesform-submission-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="volunteersform-submission-handler.js"></script>
+
+
+
+  </body>
+</html>
